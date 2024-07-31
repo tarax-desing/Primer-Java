@@ -82,19 +82,86 @@
 
 //MOSTRAR POR CONSOLA UNA FRASE: FULANITO FERNÁNDEZ TIENE TANTOS AÑOS.
 
-let nom = "Carlos ";
-let apellido = "Martín  ";
-let edad = "25";
- let datos = nom + apellido + "tiene " + edad;
-console.log(datos);
-let frase2 = ` ${nom}`;
-console.log(frase2);
-
- 
+// let nom = "Carlos ";
+// let apellido = "Martín  ";
+// let edad = "25";
+//  let datos = nom + apellido + "tiene " + edad;
+// console.log(datos);
+// let frase2 = ` ${nom}`;
+// console.log(frase2);
 
 
-let poema = ` Las rosas son rojas,
-las violetas son azules, 
-JavaScript es divertido `;
-console.log(poema);
 
+
+// let poema = ` Las rosas son rojas,
+// las violetas son azules, 
+// JavaScript es divertido `;
+// console.log(poema);
+
+
+
+// function calcularEdad() {
+//     // Obtener el nombre de la mascota del input.
+//     let nombre = document.getElementById("nombreMascota").value;
+//     console.log(nombre);
+//     console.log(typeof (nombre));
+
+
+
+    //     // obtener edad mascot
+    //     let edad = document.getElementById("edadMascota").value;
+    //     edad = Number(edad);
+    //     let mensaje = ""
+
+
+
+    //     if (edad > 0 && edad < 50) {
+    //         //Calcular la edad humana de la mascota
+    //         let edadHumana = edad * 7;
+    //         //Crear el mensaje para mostrar
+
+    //         let mensaje = `${nombre} tiene ${edad} años, que equivalen a 
+    //     ${edadHumana} años humanos`;
+    //         //mensaje por pantalla
+    //         document.getElementById("resultado").textContent = mensaje;
+    //     } else {
+    //         mensaje = "los datos no son correctos";
+    //     }
+
+    // }
+
+
+
+
+
+//calcula el total de la compra con el tipo de iva seleccionado
+
+    function calcularCompra() {
+        //leyendo datos pantalla
+        let nombre = document.getElementById("nombreCliente").value;
+        // console.log(nombre);
+        // console.log(typeof (nombre));
+
+        let compra = document.getElementById("importe").value;
+        compra = Number(compra);
+        let cbSeleccionado = document.getElementById("cbIva").checked;
+        // console.log(cbSeleccionado);
+
+        //calculo iva
+        let iva = 21; 
+        if (cbSeleccionado ==true) { 
+            iva=10;
+            
+        } 
+        //calculo total
+
+        let factura = compra + (compra * iva/100);
+        
+
+
+        let mensaje = `${nombre} el precio es ${compra} con el iva ${factura} `;
+
+        document.getElementById("cuenta").textContent = mensaje;
+
+
+    }

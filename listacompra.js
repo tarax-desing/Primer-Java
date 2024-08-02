@@ -10,7 +10,7 @@ function addTarea() {
         //añade texto a la lista. ej :comprar pan
         itemLista.innerHTML = `${tarea}
         
-        <button class="btnEleminar">Eliminar</button>`;
+        <button class="btnEliminar">Eliminar</button>`;
          
        
         

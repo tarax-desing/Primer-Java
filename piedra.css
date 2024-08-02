@@ -1,0 +1,40 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    max-width: 600px;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+    background-color: rgb(197, 255, 255);
+
+}
+h1 {
+    color: blue;
+}
+.elecciones {
+    display: flex;
+    justify-content: center;
+    margin: 20 0;
+}
+
+.eleccion{
+    font-size: 24px;
+    margin: 0;
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color: blueviolet;
+    color: white;
+    border: none;
+    border-radius:  5px;
+    transition: background-color 0.3s;
+}
+eleccion:hover{
+    background-color: rgb(225, 140, 37);
+}
+#result{
+    font-size:  18px;
+    font-weight: bold;
+    margin: 20px 0;
+}
+#score{
+    font-size: 16px;
+}
